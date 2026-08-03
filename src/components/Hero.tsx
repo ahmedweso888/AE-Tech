@@ -78,14 +78,7 @@ export function Hero() {
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
             </a>
-            <a
-              href="/cv-ahmed-essam.pdf"
-              download
-              className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-surface px-6 py-3 text-sm font-medium text-foreground shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-card"
-            >
-              <Download size={16} />
-              Download CV
-            </a>
+            
           </motion.div>
         </div>
 
