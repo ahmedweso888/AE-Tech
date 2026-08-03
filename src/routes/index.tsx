@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+
 import { Background } from "../components/Background";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
@@ -30,6 +32,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const isMobile = useMediaQuery("(max-width: 767px)");
+
   return (
     <>
       <a
@@ -38,20 +42,24 @@ function Index() {
       >
         Skip to content
       </a>
+
       <Background />
       <Header />
+
       <main id="main" className="relative">
         <Hero />
-        <About />   
-       <Interactive />
-        <Showcase />
+        <About />
+        <Interactive />
+
+        {isMobile ? <Projects /> : <Showcase />}
+
         <Experience />
         <TechStack />
         <Services />
-
         <Certificates />
         <Contact />
       </main>
+
       <Footer />
     </>
   );
