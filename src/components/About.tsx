@@ -3,8 +3,8 @@ import { Reveal } from "./Reveal";
 import about from "../assets/ahmed-about.jpeg";
 
 const FACTS = [
-  { value: "4+", label: "Years building software" },
-  { value: "30+", label: "Projects delivered" },
+  { value: "2+", label: "Years building software" },
+  { value: "4+", label: "Projects delivered" },
   { value: "99.9%", label: "Uptime on shipped systems" },
 ];
 
