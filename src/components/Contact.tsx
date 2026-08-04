@@ -16,7 +16,7 @@ export function Contact() {
     const params = new URLSearchParams({
       subject: `Portfolio enquiry from ${String(data.get("name") ?? "")}`,
       body: `${String(data.get("message") ?? "")}\n\n— ${String(data.get("name") ?? "")} (${String(
-        data.get("email") ?? "",
+        data.get("email") ?? "ae334442@gmail.com",
       )})`,
     });
     window.location.href = `mailto:${SITE.email}?${params.toString()}`;
@@ -103,15 +103,9 @@ export function Contact() {
                 icon: Phone,
                 label: "Phone",
                 value: SITE.phone,
-                href: `tel:${SITE.phone.replace(/\s/g, "")}`,
+                href: `tel:${SITE.phone.replace(/\s/g, "01122062692")}`,
               },
-              { icon: Github, label: "GitHub", value: "github.com/ahmedessam", href: SITE.github },
-              {
-                icon: Linkedin,
-                label: "LinkedIn",
-                value: "in/ahmedessam",
-                href: SITE.linkedin,
-              },
+              
             ].map(({ icon: Icon, label, value, href }) => (
               <li key={label}>
                 <a
