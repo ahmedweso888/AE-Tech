@@ -5,7 +5,7 @@ export const SITE = {
     "I build scalable, secure and modern web applications — from frontend interfaces to backend architecture.",
   description:
     "Ahmed Essam is a full stack software engineer building scalable, secure web applications across frontend interfaces, APIs, databases and cloud infrastructure.",
-  email: "hello@ahmedessam.dev",
+  email: "ae334442@gmail.com",
   phone: "+20 1122062692",
   location: "Asyut, Egypt",
   github: "https://github.com/",
