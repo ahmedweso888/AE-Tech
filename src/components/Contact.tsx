@@ -98,32 +98,36 @@ export function Contact() {
         <Reveal delay={0.2}>
           <ul className="mt-14 grid grid-cols-1 gap-4 text-left sm:grid-cols-2">
             {[
-              { icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
-              {
-                icon: Phone,
-                label: "Phone",
-                value: SITE.phone,
-                href: `tel:${SITE.phone.replace(/\s/g, "")}`,
-              },
-              
-            ].map(({ icon: Icon, label, value, href }) => (
-              <li key={label}>
-                <a
-                  href={href}
-                  target={href.startsWith("http") ? "_blank" : undefined}
-                  rel="noreferrer noopener"
-                  className="flex items-center gap-3 rounded-[18px] border border-border bg-surface p-4 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
-                >
-                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[11px] bg-[var(--accent-soft)] text-accent">
-                    <Icon size={16} />
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block text-xs text-muted-foreground">+201122062692</span>
-                    <span className="block truncate text-sm text-foreground">{value}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
+  {
+    icon: Mail,
+    label: "Email",
+    value: "ae334442@gmail.com",
+    href: "mailto:ae334442@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "01122062692",
+    href: "tel:01122062692",
+  },
+].map(({ icon: Icon, label, value, href }) => (
+  <li key={label}>
+    <a
+      href={href}
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel="noreferrer noopener"
+      className="flex items-center gap-3 rounded-[18px] border border-border bg-surface p-4 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+    >
+      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[11px] bg-[var(--accent-soft)] text-accent">
+        <Icon size={16} />
+      </span>
+      <span className="min-w-0">
+        <span className="block text-xs text-muted-foreground">{label}</span>
+        <span className="block truncate text-sm text-foreground">{value}</span>
+      </span>
+    </a>
+  </li>
+))}
           </ul>
         </Reveal>
 
