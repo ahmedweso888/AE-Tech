@@ -102,7 +102,7 @@ export function Contact() {
               {
                 icon: Phone,
                 label: "Phone",
-                value: 01122062692,
+                value: SITE.phone,
                 href: `tel:${SITE.phone.replace(/\s/g, "")}`,
               },
               
@@ -118,7 +118,7 @@ export function Contact() {
                     <Icon size={16} />
                   </span>
                   <span className="min-w-0">
-                    <span className="block text-xs text-muted-foreground">{label}</span>
+                    <span className="block text-xs text-muted-foreground">01122062692</span>
                     <span className="block truncate text-sm text-foreground">{value}</span>
                   </span>
                 </a>
