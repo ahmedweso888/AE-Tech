@@ -118,8 +118,8 @@ export function Contact() {
                     <Icon size={16} />
                   </span>
                   <span className="min-w-0">
-                    <span className="block text-xs text-muted-foreground">01122062692</span>
-                    <span className="block truncate text-sm text-foreground">{value}</span>
+                    <span className="block text-xs text-muted-foreground">+201122062692</span>
+                    <span className="block truncate text-sm text-foreground">ae334442@gmail.com</span>
                   </span>
                 </a>
               </li>
