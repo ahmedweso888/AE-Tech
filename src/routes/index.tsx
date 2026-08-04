@@ -56,7 +56,7 @@ function Index() {
         <Experience />
         <TechStack />
         <Services />
-        <Certificates />
+        
         <Contact />
       </main>
 
