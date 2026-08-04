@@ -119,7 +119,7 @@ export function Contact() {
                   </span>
                   <span className="min-w-0">
                     <span className="block text-xs text-muted-foreground">+201122062692</span>
-                    <span className="block truncate text-sm text-foreground">ae334442@gmail.com</span>
+                    <span className="block truncate text-sm text-foreground">{value}</span>
                   </span>
                 </a>
               </li>
